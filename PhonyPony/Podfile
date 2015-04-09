@@ -1,0 +1,5 @@
+platform :ios, '8.0'
+
+target 'PhonyPony' do
+  pod 'CocoaHTTPServer', '~> 2.3', :inhibit_warnings => true
+end
