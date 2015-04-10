@@ -15,6 +15,12 @@
 		94827FA61AD6337A00437DA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94827FA51AD6337A00437DA8 /* Images.xcassets */; };
 		94827FA91AD6337A00437DA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94827FA71AD6337A00437DA8 /* LaunchScreen.xib */; };
 		94827FB51AD6337A00437DA8 /* PhonyPonyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FB41AD6337A00437DA8 /* PhonyPonyTests.m */; };
+		94827FC61AD7552400437DA8 /* PPGatewayServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FC51AD7552400437DA8 /* PPGatewayServer.m */; };
+		94827FCA1AD755D000437DA8 /* PPHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FC91AD755D000437DA8 /* PPHTTPConnection.m */; };
+		94827FCD1AD7560300437DA8 /* PPWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FCC1AD7560300437DA8 /* PPWebSocket.m */; };
+		94827FD01AD7750900437DA8 /* PPDevToolsWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FCF1AD7750900437DA8 /* PPDevToolsWebSocket.m */; };
+		94827FD31AD7778500437DA8 /* PPLobbyWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FD21AD7778500437DA8 /* PPLobbyWebSocket.m */; };
+		94827FD61AD777A900437DA8 /* PPDeviceWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FD51AD777A900437DA8 /* PPDeviceWebSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,18 @@
 		94827FAE1AD6337A00437DA8 /* PhonyPonyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonyPonyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94827FB31AD6337A00437DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94827FB41AD6337A00437DA8 /* PhonyPonyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhonyPonyTests.m; sourceTree = "<group>"; };
+		94827FC41AD7552400437DA8 /* PPGatewayServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGatewayServer.h; sourceTree = "<group>"; };
+		94827FC51AD7552400437DA8 /* PPGatewayServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGatewayServer.m; sourceTree = "<group>"; };
+		94827FC81AD755D000437DA8 /* PPHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPConnection.h; sourceTree = "<group>"; };
+		94827FC91AD755D000437DA8 /* PPHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPConnection.m; sourceTree = "<group>"; };
+		94827FCB1AD7560300437DA8 /* PPWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWebSocket.h; sourceTree = "<group>"; };
+		94827FCC1AD7560300437DA8 /* PPWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPWebSocket.m; sourceTree = "<group>"; };
+		94827FCE1AD7750900437DA8 /* PPDevToolsWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDevToolsWebSocket.h; sourceTree = "<group>"; };
+		94827FCF1AD7750900437DA8 /* PPDevToolsWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDevToolsWebSocket.m; sourceTree = "<group>"; };
+		94827FD11AD7778500437DA8 /* PPLobbyWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLobbyWebSocket.h; sourceTree = "<group>"; };
+		94827FD21AD7778500437DA8 /* PPLobbyWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLobbyWebSocket.m; sourceTree = "<group>"; };
+		94827FD41AD777A900437DA8 /* PPDeviceWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDeviceWebSocket.h; sourceTree = "<group>"; };
+		94827FD51AD777A900437DA8 /* PPDeviceWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDeviceWebSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +106,7 @@
 		94827F971AD6337A00437DA8 /* PhonyPony */ = {
 			isa = PBXGroup;
 			children = (
+				94827FC71AD7559900437DA8 /* GatewayServer */,
 				94827F9C1AD6337A00437DA8 /* AppDelegate.h */,
 				94827F9D1AD6337A00437DA8 /* AppDelegate.m */,
 				94827F9F1AD6337A00437DA8 /* ViewController.h */,
@@ -124,6 +143,25 @@
 				94827FB31AD6337A00437DA8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94827FC71AD7559900437DA8 /* GatewayServer */ = {
+			isa = PBXGroup;
+			children = (
+				94827FC41AD7552400437DA8 /* PPGatewayServer.h */,
+				94827FC51AD7552400437DA8 /* PPGatewayServer.m */,
+				94827FC81AD755D000437DA8 /* PPHTTPConnection.h */,
+				94827FC91AD755D000437DA8 /* PPHTTPConnection.m */,
+				94827FCB1AD7560300437DA8 /* PPWebSocket.h */,
+				94827FCC1AD7560300437DA8 /* PPWebSocket.m */,
+				94827FCE1AD7750900437DA8 /* PPDevToolsWebSocket.h */,
+				94827FCF1AD7750900437DA8 /* PPDevToolsWebSocket.m */,
+				94827FD11AD7778500437DA8 /* PPLobbyWebSocket.h */,
+				94827FD21AD7778500437DA8 /* PPLobbyWebSocket.m */,
+				94827FD41AD777A900437DA8 /* PPDeviceWebSocket.h */,
+				94827FD51AD777A900437DA8 /* PPDeviceWebSocket.m */,
+			);
+			name = GatewayServer;
 			sourceTree = "<group>";
 		};
 		A157107F372FC0F9040A1E13 /* Frameworks */ = {
@@ -279,6 +317,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				94827FA11AD6337A00437DA8 /* ViewController.m in Sources */,
+				94827FCA1AD755D000437DA8 /* PPHTTPConnection.m in Sources */,
+				94827FC61AD7552400437DA8 /* PPGatewayServer.m in Sources */,
+				94827FD01AD7750900437DA8 /* PPDevToolsWebSocket.m in Sources */,
+				94827FD31AD7778500437DA8 /* PPLobbyWebSocket.m in Sources */,
+				94827FCD1AD7560300437DA8 /* PPWebSocket.m in Sources */,
+				94827FD61AD777A900437DA8 /* PPDeviceWebSocket.m in Sources */,
 				94827F9E1AD6337A00437DA8 /* AppDelegate.m in Sources */,
 				94827F9B1AD6337A00437DA8 /* main.m in Sources */,
 			);
