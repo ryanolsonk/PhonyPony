@@ -21,6 +21,7 @@
 		94827FD01AD7750900437DA8 /* PPDevToolsWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FCF1AD7750900437DA8 /* PPDevToolsWebSocket.m */; };
 		94827FD31AD7778500437DA8 /* PPLobbyWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FD21AD7778500437DA8 /* PPLobbyWebSocket.m */; };
 		94827FD61AD777A900437DA8 /* PPDeviceWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 94827FD51AD777A900437DA8 /* PPDeviceWebSocket.m */; };
+		94827FF91AD79D1200437DA8 /* web in Resources */ = {isa = PBXBuildFile; fileRef = 94827FF81AD79D1200437DA8 /* web */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		94827FD21AD7778500437DA8 /* PPLobbyWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLobbyWebSocket.m; sourceTree = "<group>"; };
 		94827FD41AD777A900437DA8 /* PPDeviceWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDeviceWebSocket.h; sourceTree = "<group>"; };
 		94827FD51AD777A900437DA8 /* PPDeviceWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDeviceWebSocket.m; sourceTree = "<group>"; };
+		94827FF81AD79D1200437DA8 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		94827F971AD6337A00437DA8 /* PhonyPony */ = {
 			isa = PBXGroup;
 			children = (
+				94827FF81AD79D1200437DA8 /* web */,
 				94827FC71AD7559900437DA8 /* GatewayServer */,
 				94827F9C1AD6337A00437DA8 /* AppDelegate.h */,
 				94827F9D1AD6337A00437DA8 /* AppDelegate.m */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94827FA41AD6337A00437DA8 /* Main.storyboard in Resources */,
+				94827FF91AD79D1200437DA8 /* web in Resources */,
 				94827FA91AD6337A00437DA8 /* LaunchScreen.xib in Resources */,
 				94827FA61AD6337A00437DA8 /* Images.xcassets in Resources */,
 			);
