@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  PPAppDelegate.h
 //  PhonyPony
 //
 //  Created by Ryan Olson on 4/8/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface PPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
