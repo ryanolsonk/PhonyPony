@@ -1,5 +1,6 @@
 platform :ios, '8.0'
 
 target 'PhonyPony' do
+  pod 'SVWebViewController', '~> 1.0', :inhibit_warnings => true
   pod 'CocoaHTTPServer', '~> 2.3', :inhibit_warnings => true
 end
